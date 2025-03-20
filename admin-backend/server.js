@@ -155,6 +155,11 @@ app.put('/api/users/:id/investments', async (req, res) => {
   }
 });
 
+// 添加 /api/message 路由
+app.get('/api/message', (req, res) => {
+  res.json({ message: '欢迎访问AI金融后端服务！' });
+});
+
 // 启动服务器
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
