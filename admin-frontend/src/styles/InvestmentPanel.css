@@ -1,0 +1,20 @@
+.investment-panel {
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #000, #4b0082);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.investment-panel input {
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  transition: box-shadow 0.3s;
+}
+
+.investment-panel input:focus {
+  box-shadow: 0 0 10px #4b0082;
+} 

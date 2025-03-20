@@ -1,0 +1,20 @@
+.ai-future {
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #000, #4b0082);
+  border-radius: 10px;
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+} 

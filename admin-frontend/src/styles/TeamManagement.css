@@ -1,0 +1,36 @@
+.team-management {
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #000, #4b0082);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.team-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.team-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.team-item:hover {
+  transform: scale(1.05);
+}
+
+.qr-code {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.qr-code:hover {
+  transform: scale(1.05);
+} 

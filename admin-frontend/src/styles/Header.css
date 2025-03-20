@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--background-color);
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 0 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    display: none; /* 隐藏导航菜单 */
+  }
+
+  .nav.active ul {
+    display: flex; /* 显示导航菜单 */
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
+
+.language-switch button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.language-switch button:hover {
+  color: #4b0082;
+} 

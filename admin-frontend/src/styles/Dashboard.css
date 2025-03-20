@@ -1,0 +1,23 @@
+.dashboard {
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #000, #4b0082);
+}
+
+.investment-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.summary-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.summary-item:hover {
+  transform: scale(1.05);
+} 
