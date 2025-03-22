@@ -161,6 +161,7 @@ app.get('/api/message', (req, res) => {
 });
 
 // 启动服务器
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+app.listen(3000, '0.0.0.0', () => {
+  console.log("Server is running on port 3000");
 });
+

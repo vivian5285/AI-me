@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  admin-frontend:
+    build:
+      context: ./admin-frontend  # 确保此路径指向前端代码目录
+      dockerfile: Dockerfile     # 确保此文件存在于前端代码目录中
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./admin-frontend:/app
+    environment:
+      - NODE_ENV=production
+
+  admin-backend:
+    build:
+      context: ./admin-backend   # 确保此路径指向后端代码目录
+      dockerfile: Dockerfile     # 确保此文件存在于后端代码目录中
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./admin-backend:/app
+    environment:
+      - NODE_ENV=production
+      - MONGO_URI=mongodb://mongodb:27017/ai-finance
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
